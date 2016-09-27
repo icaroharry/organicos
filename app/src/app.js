@@ -4,11 +4,12 @@ import angular from 'angular';
 import 'angular-animate';
 import 'angular-aria';
 import 'angular-material';
+import 'ngmap';
 
 import AppController from 'src/AppController';
 import Users from 'src/map/Users';
 
-export default angular.module( 'starter-app', [ 'ngMaterial', Users.name ] )
+export default angular.module( 'organicos-app', [ 'ngMaterial', 'ngMap', Users.name ] )
   .config(($mdIconProvider, $mdThemingProvider) => {
     // Register the user `avatar` icons
     $mdIconProvider
